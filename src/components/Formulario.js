@@ -15,11 +15,11 @@ const Formulario = () => {
     useEffect(()=>{
         localStorage.setItem('listaColoresNombre',JSON.stringify(arregloNombreColores));
         localStorage.setItem('listaColoresHex',JSON.stringify(arregloColoresHex));
-    },[arregloNombreColores]);
+    },[arregloNombreColores],[arregloColoresHex]);
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        setArregloNombreColores([...arregloNombreColores,nombreColor])
+        setArregloNombreColores([...arregloNombreColores,nombreColor]);
         setArregloColoresHex([...arregloColoresHex,colorHex]);
         setNombreColor('');
         setColorHex('#000000');
