@@ -15,7 +15,7 @@ const Formulario = () => {
     useEffect(()=>{
         localStorage.setItem('listaColoresNombre',JSON.stringify(arregloNombreColores));
         localStorage.setItem('listaColoresHex',JSON.stringify(arregloColoresHex));
-    },[arregloNombreColores],[arregloColoresHex]);
+    },[arregloNombreColores]);
     
     const handleSubmit = (e) => {
         e.preventDefault();
