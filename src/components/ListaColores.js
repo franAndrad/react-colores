@@ -1,5 +1,4 @@
 import React from 'react';
-import { ListGroup } from 'react-bootstrap';
 import ItemColor from './ItemColor';
 
 const ListaColores = (props) => {
